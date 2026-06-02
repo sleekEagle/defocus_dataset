@@ -39,6 +39,8 @@ def grab_frame(cam_id):
     # cap.set(cv2.CAP_PROP_CONTRAST, 32)   # 0-255
     # cap.set(cv2.CAP_PROP_SATURATION, 32) # 0-255
 
+    # max_zoom = cap.get(cv2.CAP_PROP_ZOOM) # -1: zoom not supported
+
     ret, frame = cap.read()
     if ret:
         cap.release()
